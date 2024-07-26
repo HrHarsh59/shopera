@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_added_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:layout_marginBottom="18dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/added_shop_image"
+        android:layout_width="160dp"
+        android:layout_height="118dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        app:shapeAppearanceOverlay="@style/addedShopRadius" />
+
+    <TextView
+        android:id="@+id/added_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop Name"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/added_shop_image"
+        android:layout_alignStart="@id/added_shop_image"
+        android:layout_alignEnd="@id/added_shop_image"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="4dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cart_card"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="#F0F4F8"
+        app:cardCornerRadius="25dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/cart_product_image"
+                android:layout_width="102dp"
+                android:layout_height="92dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:background="@color/white"
+                app:shapeAppearanceOverlay="@style/cartProductRadius" />
+
+            <TextView
+                android:id="@+id/cart_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cart_product_image"
+                android:layout_marginStart="12dp"
+                android:layout_toRightOf="@id/cart_product_image"
+                android:text="Product Name"
+                android:textColor="#748A9D"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/cart_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart_product_name"
+                android:layout_alignStart="@id/cart_product_name"
+                android:layout_marginTop="4dp"
+                android:text="Product Shop Name"
+                android:textColor="#748A9D"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cart_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cart_shop_name"
+                android:layout_alignStart="@id/cart_shop_name"
+                android:text="RS.559.00"
+                android:textColor="#FF6969"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
